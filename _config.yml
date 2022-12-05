@@ -15,8 +15,8 @@ address_line_1: Midsummer Court, 314 Midsummer Boulevard
 address_line_2: Milton Keynes, MK9 2UB
 head_office: Milton Keynes
 phone: +44 (0) 1908 843680
-baseurl: "https://jackknifebooth.github.io/legendary-meme"
-url: ""
+baseurl: ""
+url: "https://jackknifebooth.github.io/legendary-meme"
 twitter_username: blazieuk
 linkedin_username: blazie-engineering-limited
 google_analytics: UA-NNNNNNNN-N
