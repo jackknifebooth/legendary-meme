@@ -1,0 +1,82 @@
+title: Blazie
+author: Blazie Engineering Ltd
+email: info@blazie.co.uk
+description: >-
+  Founded in 1999, Blazie has provided assistive technology services for
+  numerous organisations across the UK and Ireland looking to improve
+  accessible technology for their users.
+address: >-
+  Midsummer Court
+  314 Midsummer Boulevard
+  Milton Keynes
+  MK9 2UB
+  United Kingdom
+address_line_1: Midsummer Court, 314 Midsummer Boulevard
+address_line_2: Milton Keynes, MK9 2UB
+head_office: Milton Keynes
+phone: +44 (0) 1908 843680
+baseurl: ""
+url: ""
+twitter_username: blazieuk
+linkedin_username: blazie-engineering-limited
+google_analytics: UA-NNNNNNNN-N
+show_excerpts: true
+formspree_url: https://formspree.io/f/mbjwnvar
+
+header_pages:
+  - services.md
+  - about.md
+  - blog.md
+  - case-studies.md
+  - contact.md
+
+service_pages:
+  - accessibility-consultancy.md
+  - auditing-and-assessments.md
+  - assistive-technology-scripting.md
+  - training.md
+
+collections:
+  team:
+    output: false
+
+# favicon: "favicon.ico"
+
+# Build settings
+# theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Defaults
+# Enable is_homepost test for posts
+# Enable is_page test for pages
+# Enable is_home test for home page
+# Use {% if page.is_post %} etc.
+defaults:
+  - scope:
+      path: ""      # empty string for all files
+    values:
+      is_home: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      is_post: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      is_page: true
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

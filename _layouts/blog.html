@@ -1,0 +1,24 @@
+---
+layout: page
+---
+{%- if site.posts.size > 0 -%}
+  {%- for post in site.posts -%}
+    {%- assign date_format = site.minima.date_format | default: "%d %B %Y" -%}
+    <article>
+      <div class="dt w9 pb2 mt2 pv3 pv4-ns">
+        <div class="dtc v-top">
+          <a class="link fw6 headline hover-blue db f3 mb1 mb3" href="{{ post.url | relative_url }}">
+            <h1 class="f3 fw6 lh-title mb1">{{ post.title | escape }}</h1>
+          </a>
+          <time class="f6 db ttu tracked">{{ post.date | date: date_format }}</time>
+          {%- if post.author -%}
+          <h2 class="f6 db ttu mt2 mb0 tracked">{{ post.author | escape }}</h2>
+          {%- endif -%}
+          {%- if site.show_excerpts -%}
+          <span class="f4 db lh-copy measure">{{ post.excerpt }}</span>
+          {%- endif -%}
+        </div>
+      </div>
+    </article>
+  {%- endfor -%}
+{%- endif -%}

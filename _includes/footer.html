@@ -1,0 +1,43 @@
+<footer class="bg-primary headline ph3 ph5-ns pv5 pv6-ns">
+
+  <div class="mb4-l cf">
+    <h1 id="contact" class="fl w-100 pv0 f6 fw6 ttu tracked mb4">Contact</h1>
+    <article class="fl w-50 dib-ns w-auto-ns mr4-m mr5-l mb4 pr2 pr0-ns">
+      {%- include contact.html -%}
+    </article>
+  </div>
+  <section class="cf mb5">
+    <div class="mb4 mb0-ns fl w-100 w-50-l" >
+      {%- include newsletter.html -%}
+    </div>
+    {%- if site.email -%}
+    <div class="mb4 mb0-ns w-100 w-50-l fr">
+      <a class="headline hover-blue f3 f2-ns fw6 tl link dib pv3 mt2 mb4 mb0-l" href="mailto:{{ site.email }}" >
+        {{ site.email }}
+      </a>
+    </div>
+    {%- endif -%}
+  </section>
+  <div class="dt dt--fixed w-100" >
+    <div class="dn dtc-ns v-mid">
+      <small class="f5 measure db lh-copy">
+        {{- site.description | escape -}}
+        <br> <br>
+        &copy; <strong>{{ site.author | escape }}</strong>. All rights reserved.
+      </small>
+    </div>
+    <div class="db dtc-ns tc tr-ns v-mid">
+      {%- include social.html -%}
+    </div>
+  </div>
+  <div class="db dn-ns">
+    <p class="f7 mt4 tc">
+      &copy; <strong>{{ site.author | escape }}</strong>. All rights reserved.
+    </p>
+  </div>
+  <div class="mt3">
+    <a href="/terms/" title="Terms" class="f5 dib pr2 link headline hover-blue">Terms of Use</a>
+    <a href="/privacy/" title="Privacy" class="f5 dib pl2 link headline hover-blue">Privacy Notice</a>
+  </div>
+
+</footer>

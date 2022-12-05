@@ -1,0 +1,26 @@
+<header class="w-100 pa3 ph5-ns bg-secondary" role="banner">
+
+  <div class="flex flex-wrap flex-nowrap-ns items-center center w-100">
+
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+
+    <div class="flex items-center w-100 w-20-ns mb2 mb0-ns">
+      <a class="nowrap dib f4 f2-ns fw7 mt0 mb1 link headline hover-blue" title="Home" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    </div>
+
+    {%- if page_paths -%}
+    <nav class="flex w-100 w-80-ns justify-start justify-end-ns">
+      <div class="trigger">
+        {%- for path in page_paths -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+          <a class="f4 fw6 headline hover-blue link mr2 mr3-m mr4-l dib" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </nav>
+    {%- endif -%}
+
+  </div>
+</header>

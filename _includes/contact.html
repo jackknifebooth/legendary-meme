@@ -1,0 +1,14 @@
+{%- if site.head_office -%}
+<h4 class="f3 fw6">{{ site.head_office }}</h4>
+{%- endif -%}
+{%- if site.address_line_1 -%}
+<span class="f5 db black-70">{{ site.address_line_1 }}</span>
+{%- endif -%}
+{%- if site.address_line_2 -%}
+<span class="f5 black-70">{{ site.address_line_2 }}</span>
+{%- endif -%}
+{%- if site.phone -%}
+<a class="f5 db fw6 pv3 black-70 link hover-blue" title="Call {{ site.title }}" href="tel:{{ site.phone | remove: ' ' | remove: '(0)' }}">
+  {{ site.phone }}
+</a>
+{%- endif -%}

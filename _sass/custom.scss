@@ -1,0 +1,86 @@
+// _sass/custom.scss
+
+// Custom colour variables
+$primary:   #eff0f3 !default;
+$secondary: #fffffe !default;
+$tertiary:  #d9376e !default;
+$highlight: #ff8e3c !default;
+$headline:  #0d0d0d !default;
+$paragraph: #2a2a2a !default;
+
+// Custom font variables
+$custom-sans-serif: 'Red Hat Display', sans-serif !default;
+
+// Text colors
+.primary   { color: $primary; }
+.secondary { color: $secondary; }
+.tertiary  { color: $tertiary; }
+.highlight { color: $highlight; }
+.headline  { color: $headline; }
+.paragraph { color: $paragraph; }
+
+// Background colors
+.bg-primary   { background-color: $primary; }
+.bg-secondary { background-color: $secondary; }
+.bg-tertiary  { background-color: $tertiary; }
+.bg-highlight { background-color: $highlight; }
+.bg-headline  { background-color: $headline; }
+.bg-paragraph { background-color: $paragraph; }
+
+// Fonts
+.custom-sans-serif {
+  font-family: $custom-sans-serif;
+}
+
+// Custom classes
+:focus {
+  outline: 2px solid $blue !important;
+}
+
+.blogpost h1 {
+  font-size: 1rem;
+  padding-top: 2rem;
+}
+
+.blogpost p {
+  line-height: 1.5;
+  font-size: 1rem;
+  max-width: 30em;
+  margin-bottom: .5rem;
+}
+
+.blogpost a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.5;
+}
+
+.blogpost li {
+  line-height: 1.5;
+  font-size: 1rem;
+  max-width: 30em;
+  margin-bottom: .5rem;
+}
+
+.blogpost a:hover,
+.blogpost a:focus {
+  transition: color .15s ease-in;
+  color: #357edd;
+}
+
+.blogpost a:link,
+.blogpost a:visited {
+  transition: color .15s ease-in;
+}
+
+article.page > p:nth-of-type(1) {
+  font-size: 1.5rem;
+  max-width: 30em;
+  line-height: 1.5;
+}
+
+article.page > p {
+  font-size: 1.25rem;
+  max-width: 30em;
+  line-height: 1.5;
+}

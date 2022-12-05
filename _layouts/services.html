@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<section class="w-100">
+  <article class="pb4">
+    <div class="ph3 ph5-ns pt4">
+      <section class="mw9 pv4-l center flex flex-wrap items-center-ns">
+        <div class="headline w-100 w-50-l">
+          {%- if page.title -%}
+          <h1 class="f5 pt3 pb5 ttu tracked mt0">{{ page.title | escape }}</h1>
+          {%- endif -%}
+          {%- if page.excerpt -%}
+          <p class="f3 f3-ns measure dib-m lh-copy mt0">{{ page.excerpt | escape }}</p>
+          {%- endif -%}
+          <span class="f4 lh-copy measure">{{ content }}</span>
+        </div>
+      </section>
+    </div>
+  </article>
+  <article class="pa3 ph5-ns mt4 mt5-ns page">
+  </article>
+</section>
+
+<section class="w-100">
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.service_pages | default: default_paths -%}
+{%- if page_paths -%}
+  <div class="flex flex-wrap">
+  {%- for path in page_paths -%}
+    <article class="br2 w-90 w-40-l center bg-primary ma4 pa3 pa4-ns">
+      <div class="dt">
+        <div class="dtc v-mid">
+          <svg class="db w2 h2" data-icon="twitter" viewBox="0 0 32 32"
+            fill="currentColor" >
+            <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"
+            ></path>
+          </svg>
+        </div>
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.title -%}
+        <div class="dtc">
+          <a class="f3 fw6 link headline hover-blue" href="{{ my_page.url | relative_url }}">
+            <h1 class="f3 fw6 lh-title">{{ my_page.title | escape }}</h1>
+          </a>
+        </div>
+        {%- endif -%}
+      </div>
+      {%- if my_page.description -%}
+      <span class="f4 db lh-copy measure">{{ my_page.description | escape }}</span>
+      {%- endif -%}
+    </article>
+  {%- endfor -%}
+  </div>
+{%- endif -%}
+</section>
