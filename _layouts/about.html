@@ -3,22 +3,22 @@ layout: page
 ---
 {{ content }}
 
-{%- if site.team.size > 0 -%}
-  <div class="dt w9 pb2 mt2 pt3 pt4-ns">
-    <h1 class="f6 ttu tracked mt0">Meet the team</h1>
-  </div>
-  {% for team_member in site.team %}
-  <article>
-    <div class="dt w9 pb2 mt2 pv3 pv4-ns">
-      <div class="dtc w5">
-        <img src="{{ '/assets/img/' | append: team_member.image | relative_url }}" class="db w-100">
-      </div>
-      <div class="dtc v-top pl4-ns">
-        <h1 class="f6 f5-ns fw6 lh-title mv0">{{ team_member.name }}</h1>
-        <h2 class="f6 fw4 mt2 mb0 ttu tracked">{{ team_member.position }}</h2>
-        <span class="f5 db lh-copy measure">{{ team_member.content | markdownify }}</span>
-      </div>
+{% assign team_members = site.data.team %}
+<div class="dt w9 pb2 mt2 pt3 pt4-ns">
+  <h1 class="f6 ttu tracked mt0">Meet the team</h1>
+</div>
+{% for person in team_members %}
+<article>
+  <div class="dt w9 pb2 mt2 pv3 pv4-ns">
+    <div class="dtc w5">
+      <img src="{{ '/assets/img/' | append: person.image | relative_url }}" class="db w-100">
     </div>
-  </article>
-  {% endfor %}
-{% endif %}
+    <div class="dtc v-top pl4-ns">
+      <h1 class="f6 f5-ns fw6 lh-title mv0">{{ person.name }}</h1>
+      <h2 class="f6 fw4 mt2 mb0 ttu tracked">{{ person.position }}</h2>
+      <span class="f5 db lh-copy measure">{{ person.description | markdownify }}</span>
+      <a class="f5 db b headline link hover-blue" href="mailto:{{ person.email }}">{{ person.email }}</a>
+    </div>
+  </div>
+</article>
+{% endfor %}
