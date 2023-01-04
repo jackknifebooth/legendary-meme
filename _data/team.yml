@@ -27,13 +27,13 @@
   image: kelvin-duncan.jpg
   email: kelvin.duncan@blazie.co.uk
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.
+    Kelvin is a Director at Blazie and has been working in the
+    accessibility and assistive technology field for nearly 20 years.
+    Hard-working with a passion for technology to improve the lives of
+    people with disabilities, Kelvin joined Blazie in 2008 as a trainer
+    and was later promoted to business development. He became a Director
+    in 2020. In his spare time Kelvin enjoys running marathons and is
+    currently training for a triathlon.
 - name: Olly Anthony
   position: Accessibility Trainer
   image: olly-anthony.jpg
@@ -51,13 +51,12 @@
   image: george-chapman.jpg
   email: george.chapman@blazie.co.uk
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.
+    George joined Blazie in 2015 as an Accessibility Engineer. His work
+    encompasses JAWS scripting, developing custom solutions in C# and
+    Javascript, WCAG assessments, and training client developer teams in
+    accessibility solutions. Organised and creative, George enjoys the
+    problem-solving of software development. When not at Blazie, George
+    is painting in his studio in Hertfordshire.
 - name: Chris Towers
   position: Accessibility Engineer
   image: chris-towers.jpg
@@ -99,13 +98,11 @@
   image: neil-burge.jpg
   email: neil.burge@blazie.co.uk
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.
+    Neil joined Blazie in 2018 as a lead developer and Accessibility
+    Engineer, and is responsible for our JAWS Teams Script solution. He
+    has been working with JAWS and assistive technology since 2007. A
+    cycling enthusiast, Neil maintains an online shop selling 3D-printed
+    bicycle accessories.
 - name: Barry Webb
   position: Office Manager
   image: barry-webb.jpg
